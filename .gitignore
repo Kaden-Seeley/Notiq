@@ -1,39 +1,69 @@
+# Build output
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-.kotlin
+build/
+out/
+*.class
+.kotlin/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+*.local.*
+*.secret
+*.secrets
+*.token
+*.credentials
+credentials.*
+secrets.*
+secrets/
+.aws/
+.ssh/
+credentials.json
+credentials.yml
+credentials.yaml
+id_rsa*
+id_ed25519*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local data, logs, and temporary files
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+logs/
+*.tmp
+*.bak
+
+# IDE and editor files
+.idea/
+.vscode/
 *.iws
 *.iml
 *.ipr
-
-### Eclipse ###
-.apt_generated
 .classpath
-.factorypath
 .project
-.settings
+.settings/
+.apt_generated/
+.factorypath
 .springBeans
-.sts4-cache
-
-### NetBeans ###
+.sts4-cache/
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# Operating system files
 .DS_Store
+Thumbs.db
+Desktop.ini
